@@ -1,0 +1,27 @@
+@model Film
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form asp-controller="Film" asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Filmad"></label>
+        <input type="text" asp-for="Filmad" class="form-control"> 
+         </div>
+           
+         <div class="mb-3">
+        <label asp-for="Vizyontarihi"></label>
+        <input type="date" asp-for="Vizyontarihi" class="form-control"> 
+         </div>
+         <div class="mb-3"></div>
+        <label asp-for="FilmÖzet"></label>
+        <textarea asp-for="FilmÖzet" class="form-control"></textarea> 
+         </div>
+         <button class="btn btn-primary">Ekle</button>
+    </form>
+</body>
+</html>
